@@ -58,7 +58,7 @@ class MakeCommand extends AbstractCommand
     /**
      * Execute the console command.
      *
-     * @return null|int
+     * @return int
      */
     protected function fire()
     {
@@ -70,5 +70,7 @@ class MakeCommand extends AbstractCommand
         );
 
         $this->message("<info>Migration created:</info> {$migration}.php");
+
+        return 0;
     }
 }

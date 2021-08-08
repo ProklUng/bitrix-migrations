@@ -59,5 +59,7 @@ class InstallCommand extends AbstractCommand
         $this->database->createMigrationTable();
 
         $this->info('Migration table has been successfully created!');
+
+        return 0;
     }
 }

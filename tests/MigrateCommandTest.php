@@ -21,7 +21,9 @@ class MigrateCommandTest extends CommandTestCase
         $command = $this->mockCommand($migrator);
         $command->shouldReceive('info')->with('Nothing to migrate')->once();
 
-        $this->runCommand($command);
+        $result = $this->runCommand($command);
+
+        $this->assertSame(0, $result);
     }
 
     public function testItMigratesOutstandingMigrations()
@@ -36,6 +38,8 @@ class MigrateCommandTest extends CommandTestCase
         $command->shouldReceive('message')->with('<info>Migrated:</info> 2015_11_26_162220_bar.php')->once();
         $command->shouldReceive('info')->with('Nothing to migrate')->never();
 
-        $this->runCommand($command);
+        $result = $this->runCommand($command);
+
+        $this->assertSame(0, $result);
     }
 }

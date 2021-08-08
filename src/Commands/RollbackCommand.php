@@ -50,7 +50,8 @@ class RollbackCommand extends AbstractCommand
         $ran = $this->migrator->getRanMigrations();
 
         if (empty($ran)) {
-            return $this->info('Nothing to rollback');
+            $this->info('Nothing to rollback');
+            return 1;
         }
 
         $migration = $ran[count($ran) - 1];
@@ -123,11 +124,13 @@ class RollbackCommand extends AbstractCommand
     protected function deleteIfNeeded($migration)
     {
         if (!$this->input->getOption('delete')) {
-            return;
+            return 0;
         }
 
         if ($this->migrator->deleteMigrationFile($migration)) {
             $this->message("<info>Deleted:</info> {$migration}.php");
         }
+
+        return 0;
     }
 }

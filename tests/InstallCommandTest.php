@@ -20,7 +20,9 @@ class InstallCommandTest extends CommandTestCase
 
         $command = $this->mockCommand($database);
 
-        $this->runCommand($command);
+        $result = $this->runCommand($command);
+
+        $this->assertSame(0, $result);
     }
 
     public function testItDoesNotCreateATableIfItExists()
@@ -32,6 +34,8 @@ class InstallCommandTest extends CommandTestCase
         $command = $this->mockCommand($database);
         $command->shouldReceive('abort')->once()->andThrow('DomainException');
 
-        $this->runCommand($command);
+        $result = $this->runCommand($command);
+
+        $this->assertSame(1, $result);
     }
 }

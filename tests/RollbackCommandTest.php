@@ -23,7 +23,9 @@ class RollbackCommandTest extends CommandTestCase
         $command = $this->mockCommand($migrator);
         $command->shouldReceive('info')->with('Nothing to rollback')->once();
 
-        $this->runCommand($command);
+        $result = $this->runCommand($command);
+
+        $this->assertSame(1, $result);
     }
 
     public function testItRollsBackTheLastMigration()
@@ -41,7 +43,9 @@ class RollbackCommandTest extends CommandTestCase
         $command->shouldReceive('info')->with('Nothing to rollback')->never();
         $command->shouldReceive('message')->with('<info>Rolled back:</info> 2015_11_26_162220_bar.php')->once();
 
-        $this->runCommand($command);
+        $result = $this->runCommand($command);
+
+        $this->assertSame(0, $result);
     }
 
     public function testItRollbackNonExistingMigration()
@@ -60,6 +64,8 @@ class RollbackCommandTest extends CommandTestCase
         $command->shouldReceive('info')->with('Nothing to rollback')->never();
         $command->shouldReceive('message')->with('<info>Rolled back:</info> 2015_11_26_162220_bar.php')->once();
 
-        $this->runCommand($command);
+        $result = $this->runCommand($command);
+
+        $this->assertSame(0, $result);
     }
 }
