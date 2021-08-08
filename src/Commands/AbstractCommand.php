@@ -57,14 +57,14 @@ abstract class AbstractCommand extends Command
             $this->error($e->getMessage());
             $this->error('Abort!');
 
-            return $e->getCode();
+            return 1;
         }
     }
 
     /**
      * Echo an error message.
      *
-     * @param string$message
+     * @param string $message
      */
     protected function error($message)
     {

@@ -11,7 +11,7 @@ class MigratorTest extends CommandTestCase
     /**
      * Tear down.
      */
-    public function tearDown()
+    public function tearDown() : void
     {
         m::close();
     }

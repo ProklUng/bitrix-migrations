@@ -3,17 +3,17 @@
 namespace Arrilot\Tests\BitrixMigrations;
 
 use Mockery;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\ArrayInput;
 use Symfony\Component\Console\Output\NullOutput;
 
-abstract class CommandTestCase extends PHPUnit_Framework_TestCase
+abstract class CommandTestCase extends TestCase
 {
     /**
      * Tear down.
      */
-    public function tearDown()
+    public function tearDown() : void
     {
         Mockery::close();
     }
