@@ -1,16 +1,3 @@
-[![Latest Stable Version](https://poser.pugx.org/arrilot/bitrix-migrations/v/stable.svg)](https://packagist.org/packages/arrilot/bitrix-migrations/)
-[![Total Downloads](https://img.shields.io/packagist/dt/arrilot/bitrix-migrations.svg?style=flat)](https://packagist.org/packages/Arrilot/bitrix-migrations)
-[![Build Status](https://img.shields.io/travis/arrilot/bitrix-migrations/master.svg?style=flat)](https://travis-ci.org/arrilot/bitrix-migrations)
-[![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/arrilot/bitrix-migrations/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/arrilot/bitrix-migrations/)
-
-# Данный пакет больше активно не поддерживается
-
-Причина - мы больше не используем Битрикс в своих проектах.
-Если вам интересен этот проект и вы хотите заняться его поддержкой - форкните его и создайте Issue в данном репозитории чтобы мы поместили здесь ссылку на форк.
-
-Форки:
-- https://github.com/informunity/bitrix-migrations
-
 # Bitrix-migrations
 
 *Миграции БД для Битрикса и не только*
@@ -262,7 +249,17 @@ Arrilot\BitrixMigrations\Autocreate\Manager::init($_SERVER["DOCUMENT_ROOT"].'/mi
 
 1) Заменить подключение ядра Битрикса на ядро другой системы.
 
-2) Реализовать свой аналог ` Arrilot\BitrixMigrations\Repositories\BitrixDatabaseRepository;` и использовать его.
+2) Реализовать свой аналог `Arrilot\BitrixMigrations\Repositories\BitrixDatabaseRepository;` и использовать его.
 
 3) По желанию отключить существующие шаблоны миграций, сделав свои.
 
+###Трэйты для миграций
+
+- `Arrilot\BitrixMigrations\Traits\ClearCacheTrait` - очищает все виды кэша
+- `Arrilot\BitrixMigrations\Traits\EmailEventTrait` - создает новый тип почтовых событий
+- `Arrilot\BitrixMigrations\Traits\EmailTemplateTrait` - создает новый шаблон для почтового сообщения
+- `Arrilot\BitrixMigrations\Traits\IblockPropertyTrait` - создает новое пользовательское свойство инфоблока
+- `Arrilot\BitrixMigrations\Traits\MigrationsHlBlocksHelpersTrait` - хэлперы для HighLoad инфоблоков
+- `Arrilot\BitrixMigrations\Traits\ModuleTrait` - установка-удаление модулей
+- `Arrilot\BitrixMigrations\Traits\UserFieldTrait` - создание пользовательских полей
+- `Arrilot\BitrixMigrations\Traits\Migrations\UserGroupTrait` - создание групп пользователей 
