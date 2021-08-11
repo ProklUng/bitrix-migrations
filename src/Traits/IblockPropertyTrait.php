@@ -18,14 +18,14 @@ trait IblockPropertyTrait
     /**
      * Создает новое пользовательское свойство инфоблока.
      *
-     * @param string $iblock
-     * @param array  $data
+     * @param string|integer $iblock
+     * @param array         $data
      *
      * @return array
      *
      * @throws Exception
      */
-    protected function iblockPropertyCreate($iblock, array $data)
+    protected function iblockPropertyCreate($iblock, array $data) : array
     {
         $return = [];
 
@@ -67,14 +67,14 @@ trait IblockPropertyTrait
     /**
      * Обновляет указанное пользовательское свойство инфоблока.
      *
-     * @param string $iblock
-     * @param array  $data
+     * @param string|integer $iblock
+     * @param array          $data
      *
      * @return array
      *
      * @throws Exception
      */
-    protected function iblockPropertyUpdate($iblock, array $data)
+    protected function iblockPropertyUpdate($iblock, array $data) : array
     {
         $return = [];
 
@@ -114,14 +114,14 @@ trait IblockPropertyTrait
     /**
      * Удаляет указанное пользовательское свойство инфоблока.
      *
-     * @param string $iblock
-     * @param string $code
+     * @param string|integer $iblock
+     * @param string         $code
      *
      * @return array
      *
      * @throws Exception
      */
-    protected function iblockPropertyDelete($iblock, $code)
+    protected function iblockPropertyDelete($iblock, string $code) : array
     {
         $return = [];
 
@@ -153,13 +153,13 @@ trait IblockPropertyTrait
      * Умный поиск инфоблока. Если в параметр переданы цифры, то ищет по идентификатору,
      * если цифры и буквы, то по коду. Возвращает массив полей инфоблока.
      *
-     * @param string $id
+     * @param string|integer $id
      *
      * @return array
      *
-     * @throws \Exception
+     * @throws Exception
      */
-    protected function iblockLocate($id)
+    protected function iblockLocate($id) : array
     {
         if (empty($id)) {
             throw new Exception('Id parameter must not be empty');
@@ -186,7 +186,7 @@ trait IblockPropertyTrait
      *
      * @return array|null
      */
-    protected function iblockGetById($id)
+    protected function iblockGetById(int $id)
     {
         $res = CIBlock::getList([], [
             'ID' => (int) $id,
@@ -203,6 +203,7 @@ trait IblockPropertyTrait
      * @param string $siteId
      *
      * @return string|null
+     * @throws Exception
      */
     protected function iblockGetIdByCode(string $code, ?string $siteId = null)
     {

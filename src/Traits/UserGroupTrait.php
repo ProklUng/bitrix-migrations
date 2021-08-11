@@ -41,13 +41,13 @@ trait UserGroupTrait
     }
 
     /**
-     * @var string
+     * @var string $groupName
      *
      * @return array
      *
      * @throws Exception
      */
-    protected function userGroupDelete($groupName): array
+    protected function userGroupDelete(string $groupName): array
     {
         $return = [];
         $id = $this->UserGetGroupIdByCode($groupName);
@@ -66,13 +66,13 @@ trait UserGroupTrait
     }
 
     /**
-     * @var string
+     * @var string $code
      *
      * @return integer|null
      *
      * @throws Exception
      */
-    protected function UserGetGroupIdByCode($code): ?int
+    protected function UserGetGroupIdByCode(string $code): ?int
     {
         $by = 'c_sort';
         $order = 'desc';

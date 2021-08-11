@@ -15,7 +15,6 @@ trait ModuleTrait
      * @param string $name
      *
      * @return array
-     *
      * @throws Exception
      */
     public function installModule(string $name): array
@@ -37,10 +36,9 @@ trait ModuleTrait
      * @param string $name
      *
      * @return array
-     *
      * @throws Exception
      */
-    public function uninstallModule($name)
+    public function uninstallModule(string $name) : array
     {
         $return = [];
         if (!($module = CModule::CreateModuleObject($name))) {

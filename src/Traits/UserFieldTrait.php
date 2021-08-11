@@ -19,7 +19,7 @@ trait UserFieldTrait
      *
      * @throws Exception
      */
-    protected function UFCreate(array $data)
+    protected function UFCreate(array $data) : array
     {
         $return = [];
         global $USER_FIELD_MANAGER;
@@ -94,14 +94,14 @@ trait UserFieldTrait
     }
 
     /**
-     * @var string
+     * @var string $entity
      * @var string $code
      *
      * @return array
      *
      * @throws Exception
      */
-    protected function UFDelete($entity, $code): array
+    protected function UFDelete(string $entity, string $code): array
     {
         $return = [];
         $id = $this->UFGetIdByCode($entity, $code);
@@ -120,14 +120,14 @@ trait UserFieldTrait
     }
 
     /**
-     * @var string
+     * @var string $entity
      * @var string $code
      *
-     * @return int|null
+     * @return integer|null
      *
      * @throws Exception
      */
-    protected function UFGetIdByCode($entity, $code): ?int
+    protected function UFGetIdByCode(string $entity, string $code): ?int
     {
         $rsData = CUserTypeEntity::GetList([], [
             'ENTITY_ID' => $entity,
