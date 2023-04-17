@@ -40,7 +40,7 @@ class ArchiveCommand extends AbstractCommand
     /**
      * Execute the console command.
      *
-     * @return null|int
+     * @return int
      */
     protected function fire()
     {
@@ -57,5 +57,7 @@ class ArchiveCommand extends AbstractCommand
         } else {
             $this->info('Nothing to move');
         }
+
+        return 0;
     }
 }

@@ -39,7 +39,7 @@ class StatusCommand extends AbstractCommand
     /**
      * Execute the console command.
      *
-     * @return null|int
+     * @return int
      */
     protected function fire()
     {
@@ -48,6 +48,8 @@ class StatusCommand extends AbstractCommand
         $this->output->write("\r\n");
 
         $this->showNewMigrations();
+
+        return 0;
     }
 
     /**

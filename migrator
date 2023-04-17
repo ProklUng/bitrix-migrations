@@ -46,6 +46,8 @@ $app = new Application('Migrator');
 $app->add(new MakeCommand($migrator));
 $app->add(new InstallCommand($config['table'], $database));
 $app->add(new MigrateCommand($migrator));
+// Вместо MigrateCommand можно использовать SmartMigrateCommand чтобы автоматически создавать таблицу миграций в случае её отсутствия:
+// $app->add(new SmartMigrateCommand($migrator, $database));
 $app->add(new RollbackCommand($migrator));
 $app->add(new TemplatesCommand($templates));
 $app->add(new StatusCommand($migrator));

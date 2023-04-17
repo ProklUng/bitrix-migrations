@@ -43,7 +43,7 @@ class RollbackCommand extends AbstractCommand
     /**
      * Execute the console command.
      *
-     * @return null|int
+     * @return int
      */
     protected function fire()
     {
@@ -119,7 +119,7 @@ class RollbackCommand extends AbstractCommand
      *
      * @param string $migration
      *
-     * @return null
+     * @return int
      */
     protected function deleteIfNeeded($migration)
     {

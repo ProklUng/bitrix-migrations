@@ -149,7 +149,7 @@ class Migrator
      *
      * @throws Exception
      *
-     * @return string
+     * @return void
      */
     public function runMigration($file)
     {
