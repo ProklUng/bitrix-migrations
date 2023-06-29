@@ -2,6 +2,8 @@
 
 namespace Arrilot\BitrixMigrations\Interfaces;
 
+use Arrilot\BitrixMigrations\Storages\BitrixDatabaseStorage;
+
 interface DatabaseStorageInterface
 {
     /**
@@ -43,4 +45,19 @@ interface DatabaseStorageInterface
      * @return void
      */
     public function removeSuccessfulMigrationFromLog($name);
+
+    /**
+     * Start transaction
+     */
+    public function startTransaction();
+
+    /**
+     * Rollback transaction
+     */
+    public function rollbackTransaction();
+
+    /**
+     * Commit transaction
+     */
+    public function commitTransaction();
 }

@@ -97,7 +97,7 @@ class IBlockProperty
 
     /**
      * Код информационного блока.
-     * @param string $iblock_id
+     * @param int $iblock_id
      * @return $this
      */
     public function setIblockId($iblock_id)
@@ -209,7 +209,7 @@ class IBlockProperty
     /**
      * Установить тип свойства "привязка к элементам" или "привязка к группам"
      * @param string $property_type Тип свойства. Возможные значения: E - привязка к элементам, G - привязка к группам.
-     * @param string $linkIblockId код информационного блока с элементами/группами которого и будут связано значение.
+     * @param int $linkIblockId код информационного блока с элементами/группами которого и будут связано значение.
      * @return $this
      */
     public function setPropertyTypeIblock($property_type, $linkIblockId)

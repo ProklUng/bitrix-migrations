@@ -7,14 +7,14 @@ interface MigrationInterface
     /**
      * Run the migration.
      *
-     * @return void
+     * @return void|false Return false to stop the migration process
      */
     public function up();
 
     /**
      * Reverse the migration.
      *
-     * @return void
+     * @return void|false Return false to stop the migration process
      */
     public function down();
 

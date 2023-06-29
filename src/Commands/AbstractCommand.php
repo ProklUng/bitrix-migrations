@@ -42,7 +42,7 @@ abstract class AbstractCommand extends Command
      * @param InputInterface  $input  An InputInterface instance
      * @param OutputInterface $output An OutputInterface instance
      *
-     * @return null|int null or 0 if everything went fine, or an error code.
+     * @return int 0 if everything went fine, or an exit code.
      */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
@@ -94,7 +94,7 @@ abstract class AbstractCommand extends Command
     /**
      * Execute the console command.
      *
-     * @return null|int
+     * @return int
      */
     abstract protected function fire();
 }

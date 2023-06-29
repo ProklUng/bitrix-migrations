@@ -2,6 +2,8 @@
 
 namespace Arrilot\BitrixMigrations\Interfaces;
 
+use Arrilot\BitrixMigrations\Storages\FileStorage;
+
 interface FileStorageInterface
 {
     /**
@@ -68,4 +70,14 @@ interface FileStorageInterface
      * @return bool
      */
     public function delete($path);
+
+    /**
+     * Move file.
+     *
+     * @param string $path_from
+     * @param string $path_to
+     *
+     * @return bool
+     */
+    public function move($path_from, $path_to);
 }

@@ -6,12 +6,6 @@ use Bitrix\Highloadblock\HighloadBlockTable;
 
 class __className__ extends BitrixMigration
 {
-    /**
-     * Run the migration.
-     *
-     * @return mixed
-     * @throws MigrationException
-     */
     public function up()
     {
         $result = HighloadBlockTable::delete(__id__);
@@ -22,12 +16,6 @@ class __className__ extends BitrixMigration
         }
     }
 
-    /**
-     * Reverse the migration.
-     *
-     * @return mixed
-     * @throws MigrationException
-     */
     public function down()
     {
         return false;

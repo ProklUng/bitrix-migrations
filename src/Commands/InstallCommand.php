@@ -48,7 +48,7 @@ class InstallCommand extends AbstractCommand
     /**
      * Execute the console command.
      *
-     * @return null|int
+     * @return int
      */
     protected function fire()
     {

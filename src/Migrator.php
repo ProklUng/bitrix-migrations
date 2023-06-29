@@ -149,7 +149,7 @@ class Migrator
      *
      * @throws Exception
      *
-     * @return string
+     * @return void
      */
     public function runMigration($file)
     {
@@ -217,7 +217,7 @@ class Migrator
      *
      * @throws Exception
      *
-     * @return mixed
+     * @return void
      */
     public function rollbackMigration($file)
     {
@@ -316,7 +316,7 @@ class Migrator
 
         $usec = substr($usec, 2, 6);
 
-        return date('Y_m_d_His', $sec).'_'.$usec.'_'.$name;
+        return date('Y_m_d_His', (int)$sec).'_'.$usec.'_'.$name;
     }
 
     /**

@@ -19,7 +19,7 @@ class FileStorage implements FileStorageInterface
     {
         $files = Helpers::rGlob($path.'/*_*.php');
 
-        if ($files === false) {
+        if (count($files) === 0) {
             return [];
         }
 

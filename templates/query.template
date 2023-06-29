@@ -6,12 +6,6 @@ use Bitrix\Highloadblock\HighloadBlockTable;
 
 class __className__ extends BitrixMigration
 {
-    /**
-     * Run the migration.
-     *
-     * @return mixed
-     * @throws MigrationException
-     */
     public function up()
     {
         $sql = '';
@@ -19,12 +13,6 @@ class __className__ extends BitrixMigration
         $this->db->query($sql);
     }
 
-    /**
-     * Reverse the migration.
-     *
-     * @return mixed
-     * @throws MigrationException
-     */
     public function down()
     {
         return false;

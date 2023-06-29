@@ -27,7 +27,7 @@ class MigratorTest extends CommandTestCase
 
         $migrator = $this->createMigrator($database, $files);
 
-        $this->assertRegExp('/[0-9]{4}_[0-9]{2}_[0-9]{2}_[0-9]{6}_[0-9]{6}_test_migration/', $migrator->createMigration('test_migration', null));
+        $this->assertMatchesRegularExpression('/[0-9]{4}_[0-9]{2}_[0-9]{2}_[0-9]{6}_[0-9]{6}_test_migration/', $migrator->createMigration('test_migration', null));
     }
 
     /**

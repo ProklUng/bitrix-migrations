@@ -10,7 +10,7 @@ use CIBlock;
 use CIBlockProperty;
 use CUserTypeEntity;
 
-class BitrixMigration implements MigrationInterface
+abstract class BitrixMigration implements MigrationInterface
 {
     /**
      * DB connection.
@@ -20,7 +20,7 @@ class BitrixMigration implements MigrationInterface
     protected $db;
 
     /**
-     * @var bool
+     * @var bool|null
      */
     public $use_transaction = null;
 
@@ -30,26 +30,6 @@ class BitrixMigration implements MigrationInterface
     public function __construct()
     {
         $this->db = Application::getConnection();
-    }
-
-    /**
-     * Run the migration.
-     *
-     * @return mixed
-     */
-    public function up()
-    {
-        //
-    }
-
-    /**
-     * Reverse the migration.
-     *
-     * @return mixed
-     */
-    public function down()
-    {
-        //
     }
 
     /**

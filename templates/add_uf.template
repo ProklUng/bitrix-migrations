@@ -5,12 +5,6 @@ use Arrilot\BitrixMigrations\Exceptions\MigrationException;
 
 class __className__ extends BitrixMigration
 {
-    /**
-     * Run the migration.
-     *
-     * @return mixed
-     * @throws MigrationException
-     */
     public function up()
     {
         $propId = $this->addUF([
@@ -99,12 +93,6 @@ class __className__ extends BitrixMigration
         ]);
     }
 
-    /**
-     * Reverse the migration.
-     *
-     * @return mixed
-     * @throws MigrationException
-     */
     public function down()
     {
         $code = '__';

@@ -41,7 +41,7 @@ class TemplatesCommand extends AbstractCommand
     /**
      * Execute the console command.
      *
-     * @return null|int
+     * @return int
      */
     protected function fire()
     {
@@ -49,6 +49,8 @@ class TemplatesCommand extends AbstractCommand
         $table->setHeaders(['Name', 'Path', 'Description'])->setRows($this->collectRows());
         $table->setStyle('borderless');
         $table->render();
+
+        return 0;
     }
 
     /**

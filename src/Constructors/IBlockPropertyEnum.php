@@ -79,7 +79,7 @@ class IBlockPropertyEnum
 
     /**
      * Код свойства.
-     * @param string $propertyId
+     * @param int $propertyId
      * @return $this
      */
     public function setPropertyId($propertyId)

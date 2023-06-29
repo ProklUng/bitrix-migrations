@@ -8,12 +8,6 @@ class __className__ extends BitrixMigration
 {
     protected $table = '';
 
-    /**
-     * Run the migration.
-     *
-     * @return mixed
-     * @throws MigrationException
-     */
     public function up()
     {
         $fields = [
@@ -32,12 +26,6 @@ class __className__ extends BitrixMigration
         $this->db->createTable($this->table, $fields, $primary, $autoincrement);
     }
 
-    /**
-     * Reverse the migration.
-     *
-     * @return mixed
-     * @throws MigrationException
-     */
     public function down()
     {
         $this->db->dropTable($this->table);
