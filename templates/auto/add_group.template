@@ -6,12 +6,6 @@ use Bitrix\Highloadblock\HighloadBlockTable;
 
 class __className__ extends BitrixMigration
 {
-    /**
-     * Run the migration.
-     *
-     * @return mixed
-     * @throws MigrationException
-     */
     public function up()
     {
         $group = new CGroup;
@@ -24,12 +18,6 @@ class __className__ extends BitrixMigration
         }
     }
 
-    /**
-     * Reverse the migration.
-     *
-     * @return mixed
-     * @throws MigrationException
-     */
     public function down()
     {
         return false;

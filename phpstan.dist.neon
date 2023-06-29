@@ -1,0 +1,10 @@
+parameters:
+    level: 5
+    paths:
+        - src/
+    ignoreErrors:
+        - '#Trait Arrilot\\BitrixMigrations\\Traits\\\w+ is used zero times and is not analysed#'
+
+includes:
+    - vendor/phpstan/phpstan/conf/bleedingEdge.neon
+    - phpstan-baseline.neon

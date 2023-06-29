@@ -68,7 +68,7 @@ class RollbackCommand extends AbstractCommand
      *
      * @param $migration
      *
-     * @return null
+     * @return void
      */
     protected function rollbackMigration($migration)
     {
@@ -86,7 +86,7 @@ class RollbackCommand extends AbstractCommand
      *
      * @param $migration
      *
-     * @return null
+     * @return void
      */
     protected function hardRollbackMigration($migration)
     {

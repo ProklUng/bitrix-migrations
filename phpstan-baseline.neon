@@ -1,0 +1,346 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Call to static method GetByID\\(\\) on an unknown class CGroup\\.$#"
+			count: 1
+			path: src/Autocreate/Handlers/OnBeforeGroupDelete.php
+
+		-
+			message: "#^Property Arrilot\\\\BitrixMigrations\\\\Autocreate\\\\Handlers\\\\OnBeforeHLBlockAdd\\:\\:\\$event has unknown class Bitrix\\\\Main\\\\Entity\\\\Event as its type\\.$#"
+			count: 1
+			path: src/Autocreate/Handlers/OnBeforeHLBlockAdd.php
+
+		-
+			message: "#^Call to static method getById\\(\\) on an unknown class Bitrix\\\\Highloadblock\\\\HighloadBlockTable\\.$#"
+			count: 1
+			path: src/Autocreate/Handlers/OnBeforeHLBlockDelete.php
+
+		-
+			message: "#^Property Arrilot\\\\BitrixMigrations\\\\Autocreate\\\\Handlers\\\\OnBeforeHLBlockDelete\\:\\:\\$event has unknown class Bitrix\\\\Main\\\\Entity\\\\Event as its type\\.$#"
+			count: 1
+			path: src/Autocreate/Handlers/OnBeforeHLBlockDelete.php
+
+		-
+			message: "#^Call to static method getById\\(\\) on an unknown class Bitrix\\\\Highloadblock\\\\HighloadBlockTable\\.$#"
+			count: 1
+			path: src/Autocreate/Handlers/OnBeforeHLBlockUpdate.php
+
+		-
+			message: "#^Property Arrilot\\\\BitrixMigrations\\\\Autocreate\\\\Handlers\\\\OnBeforeHLBlockUpdate\\:\\:\\$event has unknown class Bitrix\\\\Main\\\\Entity\\\\Event as its type\\.$#"
+			count: 1
+			path: src/Autocreate/Handlers/OnBeforeHLBlockUpdate.php
+
+		-
+			message: "#^Call to method getList\\(\\) on an unknown class CIBlock\\.$#"
+			count: 1
+			path: src/Autocreate/Handlers/OnBeforeIBlockDelete.php
+
+		-
+			message: "#^Instantiated class CIBlock not found\\.$#"
+			count: 1
+			path: src/Autocreate/Handlers/OnBeforeIBlockDelete.php
+
+		-
+			message: "#^Call to static method getByID\\(\\) on an unknown class CIBlockProperty\\.$#"
+			count: 1
+			path: src/Autocreate/Handlers/OnBeforeIBlockPropertyDelete.php
+
+		-
+			message: "#^Call to static method GetList\\(\\) on an unknown class CIBlockPropertyEnum\\.$#"
+			count: 1
+			path: src/Autocreate/Handlers/OnBeforeIBlockPropertyUpdate.php
+
+		-
+			message: "#^Call to static method getByID\\(\\) on an unknown class CIBlockProperty\\.$#"
+			count: 1
+			path: src/Autocreate/Handlers/OnBeforeIBlockPropertyUpdate.php
+
+		-
+			message: "#^Call to static method getByID\\(\\) on an unknown class CUserTypeEntity\\.$#"
+			count: 1
+			path: src/Autocreate/Handlers/OnBeforeUserTypeDelete.php
+
+		-
+			message: "#^Call to static method getInstance\\(\\) on an unknown class Bitrix\\\\Main\\\\EventManager\\.$#"
+			count: 1
+			path: src/Autocreate/Manager.php
+
+		-
+			message: "#^Instantiated class Bitrix\\\\Main\\\\Entity\\\\EventResult not found\\.$#"
+			count: 2
+			path: src/Autocreate/Manager.php
+
+		-
+			message: "#^Call to static method add\\(\\) on an unknown class CAdminNotify\\.$#"
+			count: 1
+			path: src/Autocreate/Notifier.php
+
+		-
+			message: "#^Call to static method deleteByTag\\(\\) on an unknown class CAdminNotify\\.$#"
+			count: 1
+			path: src/Autocreate/Notifier.php
+
+		-
+			message: "#^Access to property \\$LAST_ERROR on an unknown class CIBlockProperty\\.$#"
+			count: 1
+			path: src/BaseMigrations/BitrixMigration.php
+
+		-
+			message: "#^Call to method Add\\(\\) on an unknown class CUserTypeEntity\\.$#"
+			count: 1
+			path: src/BaseMigrations/BitrixMigration.php
+
+		-
+			message: "#^Call to method GetList\\(\\) on an unknown class CIBlock\\.$#"
+			count: 1
+			path: src/BaseMigrations/BitrixMigration.php
+
+		-
+			message: "#^Call to method add\\(\\) on an unknown class CIBlockProperty\\.$#"
+			count: 1
+			path: src/BaseMigrations/BitrixMigration.php
+
+		-
+			message: "#^Call to method commitTransaction\\(\\) on an unknown class Bitrix\\\\Main\\\\DB\\\\Connection\\.$#"
+			count: 1
+			path: src/BaseMigrations/BitrixMigration.php
+
+		-
+			message: "#^Call to method rollbackTransaction\\(\\) on an unknown class Bitrix\\\\Main\\\\DB\\\\Connection\\.$#"
+			count: 1
+			path: src/BaseMigrations/BitrixMigration.php
+
+		-
+			message: "#^Call to method startTransaction\\(\\) on an unknown class Bitrix\\\\Main\\\\DB\\\\Connection\\.$#"
+			count: 1
+			path: src/BaseMigrations/BitrixMigration.php
+
+		-
+			message: "#^Call to static method Delete\\(\\) on an unknown class CIBlock\\.$#"
+			count: 1
+			path: src/BaseMigrations/BitrixMigration.php
+
+		-
+			message: "#^Call to static method Delete\\(\\) on an unknown class CIBlockProperty\\.$#"
+			count: 1
+			path: src/BaseMigrations/BitrixMigration.php
+
+		-
+			message: "#^Call to static method GetList\\(\\) on an unknown class CUserTypeEntity\\.$#"
+			count: 1
+			path: src/BaseMigrations/BitrixMigration.php
+
+		-
+			message: "#^Call to static method getConnection\\(\\) on an unknown class Bitrix\\\\Main\\\\Application\\.$#"
+			count: 1
+			path: src/BaseMigrations/BitrixMigration.php
+
+		-
+			message: "#^Call to static method getList\\(\\) on an unknown class CIBlockProperty\\.$#"
+			count: 1
+			path: src/BaseMigrations/BitrixMigration.php
+
+		-
+			message: "#^Instantiated class CIBlock not found\\.$#"
+			count: 1
+			path: src/BaseMigrations/BitrixMigration.php
+
+		-
+			message: "#^Instantiated class CIBlockProperty not found\\.$#"
+			count: 1
+			path: src/BaseMigrations/BitrixMigration.php
+
+		-
+			message: "#^Instantiated class CUserTypeEntity not found\\.$#"
+			count: 1
+			path: src/BaseMigrations/BitrixMigration.php
+
+		-
+			message: "#^Property Arrilot\\\\BitrixMigrations\\\\BaseMigrations\\\\BitrixMigration\\:\\:\\$db has unknown class Bitrix\\\\Main\\\\DB\\\\Connection as its type\\.$#"
+			count: 1
+			path: src/BaseMigrations/BitrixMigration.php
+
+		-
+			message: "#^Call to static method add\\(\\) on an unknown class Bitrix\\\\Highloadblock\\\\HighloadBlockLangTable\\.$#"
+			count: 1
+			path: src/Constructors/HighloadBlock.php
+
+		-
+			message: "#^Call to static method add\\(\\) on an unknown class Bitrix\\\\Highloadblock\\\\HighloadBlockTable\\.$#"
+			count: 1
+			path: src/Constructors/HighloadBlock.php
+
+		-
+			message: "#^Call to static method delete\\(\\) on an unknown class Bitrix\\\\Highloadblock\\\\HighloadBlockTable\\.$#"
+			count: 1
+			path: src/Constructors/HighloadBlock.php
+
+		-
+			message: "#^Call to static method update\\(\\) on an unknown class Bitrix\\\\Highloadblock\\\\HighloadBlockTable\\.$#"
+			count: 1
+			path: src/Constructors/HighloadBlock.php
+
+		-
+			message: "#^Access to property \\$LAST_ERROR on an unknown class CIBlock\\.$#"
+			count: 2
+			path: src/Constructors/IBlock.php
+
+		-
+			message: "#^Call to method Add\\(\\) on an unknown class CIBlock\\.$#"
+			count: 1
+			path: src/Constructors/IBlock.php
+
+		-
+			message: "#^Call to method Update\\(\\) on an unknown class CIBlock\\.$#"
+			count: 1
+			path: src/Constructors/IBlock.php
+
+		-
+			message: "#^Call to static method Delete\\(\\) on an unknown class CIBlock\\.$#"
+			count: 1
+			path: src/Constructors/IBlock.php
+
+		-
+			message: "#^Instantiated class CIBlock not found\\.$#"
+			count: 2
+			path: src/Constructors/IBlock.php
+
+		-
+			message: "#^Access to property \\$LAST_ERROR on an unknown class CIBlockProperty\\.$#"
+			count: 2
+			path: src/Constructors/IBlockProperty.php
+
+		-
+			message: "#^Call to method Add\\(\\) on an unknown class CIBlockProperty\\.$#"
+			count: 1
+			path: src/Constructors/IBlockProperty.php
+
+		-
+			message: "#^Call to method Update\\(\\) on an unknown class CIBlockProperty\\.$#"
+			count: 1
+			path: src/Constructors/IBlockProperty.php
+
+		-
+			message: "#^Call to static method Delete\\(\\) on an unknown class CIBlockProperty\\.$#"
+			count: 1
+			path: src/Constructors/IBlockProperty.php
+
+		-
+			message: "#^Instantiated class CIBlockProperty not found\\.$#"
+			count: 2
+			path: src/Constructors/IBlockProperty.php
+
+		-
+			message: "#^Call to method Add\\(\\) on an unknown class CIBlockPropertyEnum\\.$#"
+			count: 1
+			path: src/Constructors/IBlockPropertyEnum.php
+
+		-
+			message: "#^Call to method Update\\(\\) on an unknown class CIBlockPropertyEnum\\.$#"
+			count: 1
+			path: src/Constructors/IBlockPropertyEnum.php
+
+		-
+			message: "#^Call to static method Delete\\(\\) on an unknown class CIBlockPropertyEnum\\.$#"
+			count: 1
+			path: src/Constructors/IBlockPropertyEnum.php
+
+		-
+			message: "#^Instantiated class CIBlockPropertyEnum not found\\.$#"
+			count: 2
+			path: src/Constructors/IBlockPropertyEnum.php
+
+		-
+			message: "#^Access to property \\$LAST_ERROR on an unknown class CIBlockType\\.$#"
+			count: 2
+			path: src/Constructors/IBlockType.php
+
+		-
+			message: "#^Call to method Add\\(\\) on an unknown class CIBlockType\\.$#"
+			count: 1
+			path: src/Constructors/IBlockType.php
+
+		-
+			message: "#^Call to method Update\\(\\) on an unknown class CIBlockType\\.$#"
+			count: 1
+			path: src/Constructors/IBlockType.php
+
+		-
+			message: "#^Call to static method Delete\\(\\) on an unknown class CIBlockType\\.$#"
+			count: 1
+			path: src/Constructors/IBlockType.php
+
+		-
+			message: "#^Instantiated class CIBlockType not found\\.$#"
+			count: 2
+			path: src/Constructors/IBlockType.php
+
+		-
+			message: "#^Call to method Add\\(\\) on an unknown class CUserTypeEntity\\.$#"
+			count: 1
+			path: src/Constructors/UserField.php
+
+		-
+			message: "#^Call to method Delete\\(\\) on an unknown class CUserTypeEntity\\.$#"
+			count: 1
+			path: src/Constructors/UserField.php
+
+		-
+			message: "#^Call to method Update\\(\\) on an unknown class CUserTypeEntity\\.$#"
+			count: 1
+			path: src/Constructors/UserField.php
+
+		-
+			message: "#^Instantiated class CUserTypeEntity not found\\.$#"
+			count: 3
+			path: src/Constructors/UserField.php
+
+		-
+			message: "#^Call to static method getConnection\\(\\) on an unknown class Bitrix\\\\Main\\\\Application\\.$#"
+			count: 2
+			path: src/Helpers.php
+
+		-
+			message: "#^Call to function method_exists\\(\\) with '\\\\\\\\Arrilot…' and 'flushLocalCache' will always evaluate to false\\.$#"
+			count: 2
+			path: src/Migrator.php
+
+		-
+			message: "#^Call to method Commit\\(\\) on an unknown class CDatabase\\.$#"
+			count: 1
+			path: src/Storages/BitrixDatabaseStorage.php
+
+		-
+			message: "#^Call to method Rollback\\(\\) on an unknown class CDatabase\\.$#"
+			count: 1
+			path: src/Storages/BitrixDatabaseStorage.php
+
+		-
+			message: "#^Call to method StartTransaction\\(\\) on an unknown class CDatabase\\.$#"
+			count: 1
+			path: src/Storages/BitrixDatabaseStorage.php
+
+		-
+			message: "#^Call to method forSql\\(\\) on an unknown class CDatabase\\.$#"
+			count: 2
+			path: src/Storages/BitrixDatabaseStorage.php
+
+		-
+			message: "#^Call to method insert\\(\\) on an unknown class CDatabase\\.$#"
+			count: 1
+			path: src/Storages/BitrixDatabaseStorage.php
+
+		-
+			message: "#^Call to method query\\(\\) on an unknown class CDatabase\\.$#"
+			count: 4
+			path: src/Storages/BitrixDatabaseStorage.php
+
+		-
+			message: "#^Property Arrilot\\\\BitrixMigrations\\\\Storages\\\\BitrixDatabaseStorage\\:\\:\\$db has unknown class CDatabase as its type\\.$#"
+			count: 1
+			path: src/Storages/BitrixDatabaseStorage.php
+
+		-
+			message: "#^Function BXClearCache not found\\.$#"
+			count: 1
+			path: src/Traits/ClearCacheTrait.php

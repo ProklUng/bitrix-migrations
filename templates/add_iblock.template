@@ -5,12 +5,6 @@ use Arrilot\BitrixMigrations\Exceptions\MigrationException;
 
 class __className__ extends BitrixMigration
 {
-    /**
-     * Run the migration.
-     *
-     * @return mixed
-     * @throws MigrationException
-     */
     public function up()
     {
         $ib = new CIBlock;
@@ -46,11 +40,6 @@ class __className__ extends BitrixMigration
         ]);
     }
 
-    /**
-     * Reverse the migration.
-     *
-     * @return mixed
-     */
     public function down()
     {
         $this->deleteIblockByCode('__');

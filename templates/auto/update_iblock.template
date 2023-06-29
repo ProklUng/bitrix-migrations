@@ -5,12 +5,6 @@ use Arrilot\BitrixMigrations\Exceptions\MigrationException;
 
 class __className__ extends BitrixMigration
 {
-    /**
-     * Run the migration.
-     *
-     * @return mixed
-     * @throws MigrationException
-     */
     public function up()
     {
         $fields = __fields__;
@@ -26,12 +20,6 @@ class __className__ extends BitrixMigration
         }
     }
 
-    /**
-     * Reverse the migration.
-     *
-     * @return mixed
-     * @throws MigrationException
-     */
     public function down()
     {
         return false;

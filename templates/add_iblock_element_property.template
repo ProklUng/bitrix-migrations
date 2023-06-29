@@ -5,12 +5,6 @@ use Arrilot\BitrixMigrations\Exceptions\MigrationException;
 
 class __className__ extends BitrixMigration
 {
-    /**
-     * Run the migration.
-     *
-     * @return mixed
-     * @throws MigrationException
-     */
     public function up()
     {
         $iblockId = $this->getIblockIdByCode('__');
@@ -30,11 +24,6 @@ class __className__ extends BitrixMigration
         ]);
     }
 
-    /**
-     * Reverse the migration.
-     *
-     * @return mixed
-     */
     public function down()
     {
         $iblockId = $this->getIblockIdByCode('__');
